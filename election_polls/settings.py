@@ -88,7 +88,7 @@ DATABASES = {
         'USER': 'b618f15050f35a',
         'HOST': 'us-cdbr-east-04.cleardb.com',
         'PORT': '',
-        'PASSWORD': '623b0a4',
+        'PASSWORD': '623b0a4c',
 
     }
 }
