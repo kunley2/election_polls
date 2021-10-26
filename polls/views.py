@@ -18,7 +18,7 @@ def index(request):
 
     no = AnnouncedPuResults.objects.filter(polling_unit_uniqueid=unit_no)
     context = {'form':form,'no':no}
-    return render(request,'home.html',context)
+    return render(request,'polls/home.html',context)
 
 
 def lga(request):
@@ -87,7 +87,7 @@ def lga(request):
     dpp = sum(dpp)
     context = {'data':data,'pdp':pdp,'acn':acn,
                'jp':jp,'ppa':ppa,'cdc':cdc,'anpp':anpp,'labo':labo,'cpp':cpp,'dpp':dpp,}
-    return render(request,'lga.html',context)
+    return render(request,'polls/lga.html',context)
 
 
 def poll_unit(request):
@@ -146,4 +146,4 @@ def poll_unit(request):
         form = CreatePollForm()
 
     context = {'form':form}
-    return render(request,'poll.html',context)
+    return render(request,'polls/poll.html',context)
