@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'election_polls.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bincom_test',
-        'USER': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'PASSWORD': '',
+        'NAME': 'heroku_246997ba67ef07c',
+        'USER': 'b618f15050f35a',
+        'HOST': 'us-cdbr-east-04.cleardb.com',
+        'PORT': '',
+        'PASSWORD': '623b0a4',
 
     }
 }
