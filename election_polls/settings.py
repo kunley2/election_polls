@@ -25,14 +25,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-1u=mts+hd3^d1-oy*^jh%)2*ua#fcad&ai6z(u+0+xoh7p-=6%'
-    # str(os.getenv('SECRET_KEY'))
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://election-polls.herokuapp.com/',
+ALLOWED_HOSTS = ['https://election-poll.herokuapp.com/',
                  'localhost',]
 
 
@@ -85,11 +84,11 @@ WSGI_APPLICATION = 'election_polls.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_5ea3196d6d76e4b',
-        'USER': 'b8af5fbc85c683',
+        'NAME': 'heroku_74c9297f94eede9',
+        'USER': 'bfece854bedef3',
         'HOST': 'us-cdbr-east-04.cleardb.com',
         'PORT': '3306',
-        'PASSWORD': 'bc92fa20',
+        'PASSWORD': 'd564ecd5',
     }#,
     # 'postgresql':{
     #     'ENGINE':'django.db.backends.postgresql_psycopg2',
