@@ -25,7 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = str(os.getenv('SECRET_KEY'))
+SECRET_KEY = 'django-insecure-1u=mts+hd3^d1-oy*^jh%)2*ua#fcad&ai6z(u+0+xoh7p-=6%'
+    # str(os.getenv('SECRET_KEY'))
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -87,10 +88,17 @@ DATABASES = {
         'NAME': 'heroku_5ea3196d6d76e4b',
         'USER': 'b8af5fbc85c683',
         'HOST': 'us-cdbr-east-04.cleardb.com',
-        'PORT': '',
+        'PORT': '3306',
         'PASSWORD': 'bc92fa20',
-
-    }
+    }#,
+    # 'postgresql':{
+    #     'ENGINE':'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'd8h3t40ojsg2fo',
+    #     'USER': 'dokoiutepulhcw',
+    #     'HOST': 'ec2-35-171-90-188.compute-1.amazonaws.com',
+    #     'PORT': '5432',
+    #     'PASSWORD': '7422d3c3bbb462e946d5ada52fc8fd46b627c979cd5d7dc81bc7ae838229defc'
+    # }
 }
 
 
