@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'election_polls.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_246997ba67ef07c',
-        'USER': 'b618f15050f35a',
+        'NAME': 'heroku_5ea3196d6d76e4b',
+        'USER': 'b8af5fbc85c683',
         'HOST': 'us-cdbr-east-04.cleardb.com',
         'PORT': '',
-        'PASSWORD': '623b0a4c',
+        'PASSWORD': 'bc92fa20',
 
     }
 }
