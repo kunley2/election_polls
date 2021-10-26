@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content%}
+<div class="row">
+    <div class="col align-self-center">
+
+        <form action="{% url 'create' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
