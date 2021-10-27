@@ -1,1 +1,1 @@
-web:gunicorn election_polls.wsgi
+web: gunicorn election_polls.wsgi
