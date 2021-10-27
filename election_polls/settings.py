@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'heroku_5ea3196d6d76e4b',
         'USER': 'b8af5fbc85c683',
         'HOST': 'us-cdbr-east-04.cleardb.com',
-        'PORT': '3306',
+        'PORT': '',
         'PASSWORD': 'bc92fa20',
     }#,
     # 'postgresql':{
