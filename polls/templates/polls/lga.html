@@ -9,7 +9,7 @@
 {% block content %}
 <form action="{% url 'lga' %}" method="post">
     {% csrf_token%}
-    {{ data }}
+    {{ data.as_p }}
 
     <input value="submit" type="submit">
 </form>

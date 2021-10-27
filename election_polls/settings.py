@@ -31,7 +31,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://election-poll.herokuapp.com/',
+ALLOWED_HOSTS = ['https://election-polls.herokuapp.com/',
                  'localhost',]
 
 
@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'election_polls.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_74c9297f94eede9',
-        'USER': 'bfece854bedef3',
+        'NAME': 'heroku_5ea3196d6d76e4b',
+        'USER': 'b8af5fbc85c683',
         'HOST': 'us-cdbr-east-04.cleardb.com',
         'PORT': '3306',
-        'PASSWORD': 'd564ecd5',
+        'PASSWORD': 'bc92fa20',
     }#,
     # 'postgresql':{
     #     'ENGINE':'django.db.backends.postgresql_psycopg2',
