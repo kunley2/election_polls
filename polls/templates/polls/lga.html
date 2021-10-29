@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<form action="{% url 'lga' %}" method="post">
+    {% csrf_token%}
+    {{ data.as_p }}
+
+    <input value="submit" type="submit">
+</form>
+<table class ="table-primary">
+     <thead>
+    <tr>
+        <th>Party</th>
+        <th>Votes</th>
+    </tr>
+    <tr>
+        <td>PDP</td>
+        <td>{{pdp}}</td>
+    </tr>
+    <tr>
+        <td>DPP</td>
+        <td>{{dpp}}</td>
+    </tr>
+    <tr>
+        <td>ACN</td>
+        <td>{{acn}}</td>
+    </tr>
+    <tr>
+        <td>PPA</td>
+        <td>{{ppa}}</td>
+    </tr>
+    <tr>
+        <td>CDC</td>
+        <td>{{cdc}}</td>
+    </tr>
+    <tr>
+        <td>JPP</td>
+        <td>{{jp}}</td>
+    </tr>
+    <tr>
+        <td>ANPP</td>
+        <td>{{anpp}}</td>
+    </tr>
+    <tr>
+        <td>LABOUR</td>
+        <td>{{labo}}</td>
+    </tr>
+    <tr>
+        <td>CPP</td>
+        <td>{{cpp}}</td>
+    </tr>
+     </thead>
+</table>
+{% endblock %}
+</body>
+</html>
