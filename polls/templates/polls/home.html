@@ -9,31 +9,27 @@
 {% block content %}
 <div class="container">
     <form action="{% url 'index' %}" method="post">
-      {% csrf_token %}
+        {% csrf_token %}
         {{form.as_p}}
-    <input type="submit" value="submit">
+        <input type="submit" value="submit">
     </form>
 
-
-    <table class ="table-primary">
-    <thead>
+</div>
+    <table class="table-primary">
+        <thead>
         <tr>
-
             <th>Party</th>
-            {% for n in no %}
-            <td>{{n.party_abbreviation}}</td>
-        {% endfor %}
+            <th>Results</th>
         </tr>
+        {% for n in no %}
         <tr>
-
-            <th> Results </th>
-            {% for n in no %}
+            <td>{{n.party_abbreviation}}</td>
             <td>{{n.party_score}}</td>
-            {% endfor %}
         </tr>
-    </thead>
+        {% endfor %}
+        </thead>
     </table>
-    </div>
+
 {% endblock %}
 </body>
 </html>
